@@ -8,7 +8,7 @@ The information of targeted consumer groups is implicitly embedded in the 'produ
 Product data of protein beverage products launched in 2020-2023, 19420 products (rows) x 23 features (columns). Data is not provided as it is collected from a market research company.
 
 #### Steps
-#### Step 1: Data Pre-processing
+#### Step 1: Data pre-processing
 Data was processed to filter out invalid or duplicate samples. For example, some products are double counted as new product launches for the events of new packaging or importation to a region. These samples were filtered out before analysis. Valid data have < 1% missing values.
 
 #### Step 2: Text processing

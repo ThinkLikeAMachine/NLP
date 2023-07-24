@@ -12,6 +12,6 @@ Product data of protein beverage products launched in 2020-2023, 19420 products 
 Data was processed to filter out invalid or duplicate samples. For example, some products are double counted as new product launches for the events of new packaging or importation to a region. These samples were filtered out before analysis. Valid data have < 1% missing values.
 
 ##### Step 2: Text processing
-The texts of product claims/description were processed using NLP package 'spacy' and customized tokenizers to provide the corpus for topic modeling.
+The texts of product claims/description were processed using NLP package `spacy` and customized tokenizers to provide the corpus for topic modeling.
 
 

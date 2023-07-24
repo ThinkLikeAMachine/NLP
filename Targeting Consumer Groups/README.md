@@ -14,7 +14,8 @@ Data was processed to filter out invalid or duplicate samples. For example, some
 #### Step 2: Text processing
 The texts of product claims/description were processed using NLP package `spacy` and customized tokenizers to provide the corpus for topic modeling.
 
-#### Step 3: Topic modeling
-Both K-means clustering and Latent Dirichlet Allocation (LDA) techniques were used and compared for topic modeling. But LDA was selected because it provided more semantics of the topics. Numbers of topics were determined based on both the coherence score of the LDA models and reviewing the clusters of top words.
+#### Step 3: Topic modeling (Clustering)
+Both K-means clustering and Latent Dirichlet Allocation (LDA) techniques were used and compared for topic modeling. But LDA was selected because it provided more semantics of the topics. Numbers of topics were determined based on both the coherence score of the LDA models and reviewing the clusters of top words (little overlap and more differentiation). After topic modeling, we are able to understand the main consumer group that each new product is targeting.
 
-
+#### Step 4: Classification
+Now we can identify the most common ingredients used in the protein beverage products for each targeting consumer group. The ingredients were vectorized through `TfidfVectorizer` with a customized tokenizer, and the features were classified using a naive bayes classifier `MultinomialNB`. Cross-validation was conducted using `GridsearchCV` to identify the best hyperparameter.
